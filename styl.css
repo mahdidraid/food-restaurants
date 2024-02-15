@@ -1,0 +1,397 @@
+
+ @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,300;1,400&display=swap');
+
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+
+
+body{
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+ /* Hearder start */
+
+ul{
+    list-style: none;
+}
+a {
+   text-decoration: none;
+}
+.mahdi-text
+{
+    color: #e4b95b;
+}
+
+.btn{
+    display: inline-block;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 15px;
+}
+
+.container{
+
+    max-width: 1100px;
+    margin: auto;
+}
+
+.btn-secondary{
+    color: #fff;
+    background-color: #383848;
+    margin-top: 2rem;
+}
+.btn-primary{
+    color: #fff;
+    border: 1px solid #fff;
+
+}
+.btn-primary:hover,
+.btn-secondary:hover
+{
+    background-color: #e4b95b;
+}
+
+header{
+    height: 100vh;
+   background: url(./img/home_bg.jpeg) center center/cover no-repeat;
+   position: relative;
+
+}
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+#nav img {
+    width: 80px;
+    margin-left: 100px;
+
+}
+
+#nav ul{
+    display: flex;
+    margin-right: 100px;
+
+}
+#nav ul li {
+    padding: 50px 20px;
+    color: #fff;;
+    font-weight: 600;
+    
+}
+
+#nav ul li:hover{
+    border-bottom: 2px solid #e4b95b ;
+}
+
+header .content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+}
+
+header .content h1{
+    font-size: 40px;
+    color: #fff;
+}
+
+header .content p{
+    margin: 20px;
+    color: #fff;
+
+}
+
+header::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0 ,0.6);
+}
+
+header *{
+    z-index: 5;
+}
+
+ 
+#about {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4; 
+}
+
+#about .titel,#offer .titel,
+#menu .titel
+{
+    text-align: center;
+    margin: 4rem;
+
+} 
+
+#about h2 , #menu h2{
+    color:#383848 ; 
+
+}
+#about h2 , #offer h2 , #menu h2 , #gallery h2{
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+#about .titel p, #menu .title p{
+    font-size: 14px;
+    color: #9a9a9a;
+    font-weight: 600;
+}
+
+#about .about-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+#about .about-content img {
+    width: 450px;
+}
+
+
+#about .about-content p{
+   color: #9a9a9a;;
+   margin-right:  7rem;
+   font-weight: 500;
+   line-height: 1.6;
+}
+
+#offer{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    background: url(./img/offer-background.jpg);
+
+}
+
+#offer h2{
+    color: #e4b95b;
+}
+#offer .titel p{
+    color: #fff;
+    font-weight: 500;
+}
+#offer .offers-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+
+}
+
+#offer .offers-item img{
+    width: 200px;
+}
+#offer .offers-item h3{
+   font-size: 25px;
+   margin: 15px 0;
+}
+
+#offer .offers-item p{
+    font-size: 14px;
+    padding: 0 20px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+#offer .offers-item span{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 8px;
+}
+
+#menu{
+    background-color: #f4f4f4;
+    padding:  5rem 0;
+    
+}
+
+#menu .menu-items{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+#menu .menu-items .menu-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px;
+}
+
+#menu .menu-items .menu-item img{
+    width: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+#menu .menu-items .menu-item h3{
+    color: #383848;
+    border-bottom: 1px  dashed  #c2bdbd;
+    position: relative;
+}
+
+#menu .menu-items .menu-item span{
+    position: absolute;
+    top: 0 ;
+    right: 0;
+}
+
+#menu .menu-items .menu-item p{
+    margin-top:  10px;
+}
+
+#menu .btn{
+    background: #e4b95b;
+    color: #fff;
+    display: block;
+   margin:  20px auto 0;
+   cursor: pointer;
+
+}
+#menu .btn:hover{
+    background: #383848;
+}
+
+#daytim {
+    background: url("./img/daytime_bg.jpeg") center center/cover fixed no-repeat;
+    color: #fff;
+    text-align: center;
+}
+#daytim .daytime-items{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 40vh;
+}
+
+#daytim .daytime-items h3{
+    font-size: 32px;
+    margin: 20px 0 10px;
+}
+
+#daytim .daytime-items p{
+    font-weight: 500;
+}
+
+#gallery{
+    background: url("./img/offer-background.jpg") center center/cover no-repeat;
+    padding: 8rem 0 6rem;
+}
+
+#gallery h2{
+    color: #fff;
+    text-align: center;
+}
+#gallery .image-garry{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+#gallery .image-garry img {
+    width: 280px;
+    height: 200px;
+    border-radius: 15px;
+    margin: 20px;
+    opacity: 0.8;
+}
+
+#gallery .image-garry img:hover{
+    opacity: 1;
+}
+
+
+/* contact contact-content  contact-info */
+
+#contact{
+    padding: 5rem  0;
+    background-color: #f4f4f4;
+
+}
+#contact .container{
+    max-width: 900px;
+}
+
+#contact .contact-content{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#contact .contact-content  .contact-info {
+    width: 50%;
+}
+
+#contact .contact-content  .contact-info div{
+    margin: 20px 0;
+    line-height: 1.7;
+}
+
+#contact .contact-content  .contact-info h3{
+    font-size: 28px;
+    color: #383848;
+    margin-bottom: 10px;
+}
+
+#contact .contact-content  .contact-info p{
+    color: #9a9a9a;
+}
+
+.contact-info  i{
+    color: #e4b95b;
+    margin-right: 5px;
+}
+
+#contact .contact-content  .contact-info a i{
+    color: #fff;
+    background-color: #383848;
+    padding: 15px;
+    border-radius: 50%;
+    font-size: 20px;
+}
+#contact .contact-content  .contact-info a i:hover{
+    background-color: #e4b95b;
+    color: #383848;
+}
+
+form{
+    width: 50%;
+
+}
+
+form  input ,textarea{
+    display: block;
+    width: 100%;
+    padding: 20px 15px;
+    margin: 20px 0;
+    border: none;
+    background-color: #e3e2dd;
+}
+
+ #contact .btn{
+    background-color: #e4b95b;
+    color: #fff;
+
+}
+
+#contact .btn:hover{
+    background-color: #383848;
+    cursor: pointer;
+}
